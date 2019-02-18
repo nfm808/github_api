@@ -32,17 +32,18 @@ function handleForm() {
 
 //display user info
 function displayResults(responseJson, user) {
-  console.log(responseJson);
   const header = `<h2 class="username">${user}</h2>`
-  const name = responseJson.forEach(element => element.name);
-  console.log(name);
+  const results = responseJson.map(element => {
+    return `<h3> ${element.name} </h3>
+            <p> <a href="${element.html_url}">${element.html_url}</a></p>`
+  });
   //empty any previous search
   $('.results').empty();
   $('.results').prepend(header);
-  $('.results').append(results);
-  //iterate through the user array
-  $('.results').toggleClass('hidden');
+  $('.results').append(results.join(""));
 };
+
+
 
 function handlePage() {
   handleForm();
