@@ -1,21 +1,29 @@
 html * {
   box-sizing: border-box;
 }
-.hidden {
-  display: none;
-}
 body {
   display: flex;
   flex-direction: column;
   width: 80%;
 }
 #js_form {
+  width: 50%;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.results {
+  width: 80%;
+  align-self: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.results {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.search-results {
+  list-style: none;
+}
+.hidden {
+  display: none;
 }
