@@ -20,3 +20,11 @@ function displayResults() {
   console.log(`displayResults ran`);
 };
 
+function handlePage() {
+  getUser();
+  createQueryString();
+  handleForm();
+  displayResults();
+};
+
+$(handlePage());
