@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>github user repo api</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <form id="js_form" action="" method="get">
+    <label for="username">GitHub User Handle</label>
+    <input type="text" name="username" id="js_username" />
+    <button id="js_submit" type="submit">Search</button>
+  </form>
+  <section class="hidden results">
+    <h2 class="username"></h2>
+    <ul class="search-results">
+      <li><h3 class="repo"></h3></li>
+      <li><a class="link" href=""></a></li>
+    </ul>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>
